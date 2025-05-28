@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ open: false }">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIMBAH-E</title>
+
+    <link href="./style.css" rel="stylesheet" />
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+  </head>
+
+  <body class="font-display">
+    <!-- headernavigasi  -->
+    <div class="bg-white" x-data="{ isOpen: false }">
+      <header class="absolute inset-x-0 top-0 z-50">
+        <nav class="flex items-center justify-between p-6 lg:px-8 shadow-lg bg-white" aria-label="Global">
+          <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button type="button" @click="isOpen = true" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Open main menu</span>
+              <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a href="#" class="text-sm/6 font-semibold text-gray-900">Beranda</a>
+            <a href="#" class="text-sm/6 font-semibold text-gray-900">Tentang Kami</a>
+            <a href="#" class="text-sm/6 font-semibold text-gray-900">Lapangan</a>
+            <a href="#" class="text-sm/6 font-semibold text-gray-900">Kontak</a>
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">→</span></a>
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="true" x-show="isOpen" @click.away="isOpen = false">
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+          <div class="fixed inset-0 z-50"></div>
+          <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+              </a>
+              <button type="button" @click="isOpen = false" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Close menu</span>
+                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
+                </div>
+                <div class="py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- konten isi awal-->
+
+      
+
+
+
+
+
+
+
+
+
+
+      <div class="max-w-7xl mx-auto px-24 pt-[160px] pb-10 space-y-8">
+        <!-- ATAS: Gambar -->
+  <div class="flex flex-col md:flex-row gap-6">
+    <!-- Gambar utama kiri (lock height) -->
+    <div class="flex-1">
+      <img src="image/bola_dalam_gajayana.jpg" alt="Lapangan Utama" class="w-full h-[440px] object-cover rounded-lg">
+    </div>
+
+    <!-- Gambar kanan: 2 vertikal -->
+    <div class="flex flex-col w-full md:w-[300px]">
+      <!-- Gambar tambahan 1 -->
+      <img src="image/bola_dalam_gajayana.jpg" alt="Foto Tambahan 1" class="w-full h-[200px] object-cover rounded-lg mb-4">
+
+      <!-- Gambar tambahan 2 dengan tombol -->
+      <div class="w-full h-[200 px] overflow-hidden rounded-lg">
+        <div class="w-full h-full relative group">
+          <img src="image/bola_dalam_gajayana.jpg" alt="Foto Tambahan 2" class="w-full h-full object-cover rounded-lg">
+          <div class="absolute bottom-2 left-1/2 -translate-x-1/2 z-10">
+            <button class="bg-green-600 text-white text-sm px-3 py-1 rounded-md font-semibold shadow-md hover:bg-green-700 transition">
+              Tampilkan Semua Foto
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BAWAH: Info & Harga -->
+  <div class="flex flex-col md:flex-row justify-between gap-6">
+    <!-- Kiri: Info -->
+    <div class="flex-1">
+      <h1 class="text-2xl md:text-3xl font-bold mb-2 leading-snug">Lapangan Sepak Bola Dalam GOR Gajayana</h1>
+      <p class="text-gray-600 mb-2">Jl. Tenes No.1 (Stadion Gajayana) Kota Malang</p>
+      <div class="flex items-center gap-2 text-gray-700">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 12c2.209 0 4-1.791 4-4s-1.791-4-4-4-4 1.791-4 4 1.791 4 4 4zm0 2c-2.667 0-8 1.334-8 4v2h16v-2c0-2.666-5.333-4-8-4z"/>
+        </svg>
+        <span>Sepak Bola</span>
+      </div>
+    </div>
+
+    <!-- Kanan: Harga -->
+    <div class="w-full md:w-[300px] flex flex-col justify-between border border-gray-200 p-4 rounded-lg shadow-sm">
+      <div>
+        <h2 class="text-base text-gray-600 mb-1">Mulai dari</h2>
+        <p class="text-2xl font-bold text-gray-900">Rp1.500.000 <span class="text-base font-normal">per jam</span></p>
+      </div>
+      <button class="mt-6 bg-green-600 text-white font-semibold py-3 rounded-md hover:bg-green-700">Cek Ketersediaan</button>
+    </div>
+  </div>
+
+
+<!-- konten isi akhir -->
+  <!-- Deskripsi -->
+  <div class="mt-8 text-gray-800 leading-relaxed">
+    <h2 class="text-lg font-semibold mb-2">Deskripsi</h2>
+    <ul class="list-disc pl-5 space-y-2">
+      <li>Lapangan Berstandar Internasional: Lapangan dengan rumput alami yang dirawat secara berkala.</li>
+      <li>Penerangan Optimal: Sistem pencahayaan yang memadai memungkinkan permainan berlangsung hingga malam hari tanpa kendala.</li>
+      <li>Ruang Ganti Nyaman: Dilengkapi shower & fasilitas kebersihan.</li>
+      <li>Area Parkir Luas: Aman dan nyaman untuk pengunjung dan pemain.</li>
+    </ul>
+  </div>
+
+<!-- Info Lokasi dengan gambar -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-10">
+  <div class="flex items-start gap-2">
+    <img src="image/indoor.png" alt="icon" class="w-6 h-6">
+    <div><strong>Tipe Lapangan :</strong> Indoor</div>
+  </div>
+  <div class="flex items-start gap-2">
+    <img src="image/telpon.png" alt="icon" class="w-6 h-6">
+    <div><strong>Hubungi :</strong> 085123456789</div>
+  </div>
+  <div class="flex items-start gap-2">
+    <img src="image/ukuran.png" alt="icon" class="w-6 h-6">
+    <div><strong>Ukuran :</strong> 10 x 10 m</div>
+  </div>
+  <div class="flex items-start gap-2">
+    <img src="image/bola.png" alt="icon" class="w-6 h-6">
+    <div><strong>Kategori :</strong> Sepak Bola</div>
+  </div>
+</div>
+
+<!-- Alpine.js -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+<!-- Alpine.js -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+<!-- Kalender -->
+<div 
+  x-data="calendar()" 
+  class="max-w-7xl mx-auto px-6 py-10 border border-gray-300 rounded-xl bg-white shadow"
+>
+  <!-- Header Bulan -->
+  <div class="flex items-center justify-between mb-6">
+    <button 
+      @click="previousMonth" 
+      class="text-gray-600 hover:text-gray-800 text-3xl"
+    >
+      &#8592;
+    </button>
+    <div class="font-bold text-2xl capitalize tracking-wide" x-text="monthYear"></div>
+    <button 
+      @click="nextMonth" 
+      class="text-gray-600 hover:text-gray-800 text-3xl"
+    >
+      &#8594;
+    </button>
+  </div>
+
+  <!-- Nama Hari -->
+  <div class="grid grid-cols-7 text-center text-base font-semibold text-gray-600 mb-4">
+    <div>Minggu</div>
+    <div>Senin</div>
+    <div>Selasa</div>
+    <div>Rabu</div>
+    <div>Kamis</div>
+    <div>Jumat</div>
+    <div>Sabtu</div>
+  </div>
+
+  <!-- Tanggal -->
+  <div class="grid grid-cols-7 gap-4 text-center">
+    <!-- Kosong di awal bulan -->
+    <template x-for="(blank, index) in blanks" :key="'blank' + index">
+      <div class="p-6"></div>
+    </template>
+
+    <!-- Tanggal -->
+    <template x-for="(day, index) in daysInMonth" :key="index">
+      <div 
+        class="bg-gray-100 text-gray-700 p-6 rounded-lg cursor-pointer hover:bg-green-200 transition duration-200 ease-in-out text-lg"
+        x-text="day"
+      ></div>
+    </template>
+  </div>
+</div>
+
+
+
+<!-- Logic -->
+<script>
+  function calendar() {
+    return {
+      currentDate: new Date(2025, 1, 1), // Mulai dari Februari 2025
+      get monthYear() {
+        return this.currentDate.toLocaleDateString('id-ID', {
+          month: 'long',
+          year: 'numeric'
+        });
+      },
+      get firstDayOfMonth() {
+        return new Date(this.currentDate.getFullYear(), this.currentDate.getMonth(), 1).getDay();
+      },
+      get daysInMonth() {
+        const year = this.currentDate.getFullYear();
+        const month = this.currentDate.getMonth();
+        const total = new Date(year, month + 1, 0).getDate();
+        return Array.from({ length: total }, (_, i) => i + 1);
+      },
+      get blanks() {
+        return Array.from({ length: this.firstDayOfMonth });
+      },
+      previousMonth() {
+        this.currentDate.setMonth(this.currentDate.getMonth() - 1);
+        this.currentDate = new Date(this.currentDate);
+      },
+      nextMonth() {
+        this.currentDate.setMonth(this.currentDate.getMonth() + 1);
+        this.currentDate = new Date(this.currentDate);
+      }
+    }
+  }
+</script>
+<!-- logic -->
+  <!-- Pemesanan -->
+<!-- Pilih Bentuk Pemesanan -->
+<div class="flex items-center justify-between">
+  <label class="w-1/3 font-semibold text-green-600">Pilih Bentuk Pemesanan</label>
+  <select class="w-2/3 border border-green-500 bg-green-50 text-green-700 rounded-md px-4 py-2 focus:outline-none">
+    <option selected>Latihan 1 Kali</option>
+    <option>Latihan Berlangganan 1 Bulan</option>
+    <option>Pertandingan Antar Pemain/Perkumpulan Kota Malang</option>
+    <option>Pertandingan Antar Klub Nasional</option>
+    <option>Divisi Utama</option>
+    <option>Divisi 1</option>
+    <option>Kompetisi Lokal</option>
+    <option>Divisi 2</option>
+  </select>
+</div>
+
+
+    <h3 class="font-semibold mb-4 text-green-600">Minggu, 23 Februari 2025</h3>
+
+
+<!-- Pilih Waktu (Interaktif Toggle) -->
+<div x-data="{ selected: [] }" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-6 mt-6">
+  <template x-for="(slot, index) in [
+    { time: '10:00 - 12:00', price: 'Rp1.500.000' },
+    { time: '12:00 - 14:00', price: 'Rp1.500.000' },
+    { time: '14:00 - 16:00', price: 'Rp1.500.000' },
+    { time: '16:00 - 18:00', price: 'Rp1.500.000' },
+    { time: '18:00 - 20:00', price: 'Rp1.500.000' },
+    { time: '20:00 - 22:00', price: 'Rp1.500.000' }
+  ]" :key="index">
+    <div
+      @click="
+        selected.includes(index)
+          ? selected = selected.filter(i => i !== index)
+          : selected.push(index)
+      "
+      :class="selected.includes(index) ? 'bg-green-100 text-green-700 border-green-500' : 'bg-gray-100 text-gray-700 border-gray-300'"
+      class="p-3 text-center border rounded-md cursor-pointer transition duration-200 ease-in-out"
+    >
+      <p class="font-medium">120 Menit</p>
+      <p x-text="slot.time"></p>
+      <p class="font-semibold" x-text="slot.price"></p>
+    </div>
+  </template>
+</div>
+ 
+  <!-- Deskripsi Bentuk Pemesanan -->
+  <div class="mt-10 text-gray-800">
+    <h4 class="font-semibold mb-2">Deskripsi Bentuk Pemesanan :</h4>
+    <ol class="list-decimal pl-6 space-y-1">
+      <li>Latihan 1 Kali</li>
+      <li>Latihan Berlangganan 1 Bulan</li>
+      <li>Pertandingan Antar Pemain/Perkumpulan Kota Malang</li>
+      <li>Pertandingan Antar Klub Nasional</li>
+      <li>Divisi Utama</li>
+      <li>Divisi 1</li>
+      <li>Kompetisi Lokal</li>
+      <li>Divisi 2</li>
+    </ol>
+  </div>
+
+
+</div>
+
+
+
+
+    
+
+    <!-- footer awal-->
+    <div class="w-full overflow-hidden">
+      <svg class="w-full h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#222222"
+          fill-opacity="1"
+          d="M0,160L48,144C96,128,192,96,288,112C384,128,480,192,576,202.7C672,213,768,171,864,128C960,85,1056,43,1152,42.7C1248,43,1344,85,1392,106.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+<footer class="bg-[#222222] text-white">
+    <div class="max-w-6xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- Kontak Kami -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Kontak Kami</h3>
+        <ul class="space-y-3 text-sm text-white/80">
+          <li class="flex items-start gap-3">
+            <img src="https://via.placeholder.com/20" alt="Location" class="w-5 h-5 mt-1" />
+            <span>Jl. Tenes No.1 (Stadion Gajayana) Kota Malang</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="https://via.placeholder.com/20" alt="Phone" class="w-5 h-5" />
+            <span>+ (0341) 324375</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="https://via.placeholder.com/20" alt="Email" class="w-5 h-5" />
+            <a href="mailto:disporaparmalang@gmail.com" class="hover:underline">disporaparmalang@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Media Sosial -->
+      <div class="md:text-right">
+        <h3 class="text-lg font-semibold mb-4">Media Sosial</h3>
+        <ul class="space-y-3 text-sm text-white/80">
+          <li class="flex md:justify-end items-center gap-3">
+            <img src="https://via.placeholder.com/20" alt="Instagram" class="w-5 h-5" />
+            <span>@Disporarkotamalang</span>
+          </li>
+          <li class="flex md:justify-end items-center gap-3">
+            <img src="https://via.placeholder.com/20" alt="YouTube" class="w-5 h-5" />
+            <span>Disporarkotamalang</span>
+          </li>
+          <li class="flex md:justify-end items-center gap-3">
+            <img src="https://via.placeholder.com/20" alt="Facebook" class="w-5 h-5" />
+            <span>Disporarkotamalang</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="bg-black py-4 text-sm text-white/70 flex flex-col md:flex-row justify-between items-center px-4 md:px-12">
+      <div class="mb-2 md:mb-0">
+        Copyright © 2025 All rights reserved |
+        <span class="font-semibold text-white">DISPORAPAR KOTA MALANG</span>
+      </div>
+      <div class="space-x-6">
+        <a href="#" class="hover:underline">Kebijakan Privasi</a>
+        <a href="#" class="hover:underline">Peta Situs</a>
+      </div>
+    </div>
+
+    <!-- footer akhir -->
+  </body>
+</html>
