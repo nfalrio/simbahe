@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ open: false }">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIMBAH-E</title>
+
+    <link href="./style.css" rel="stylesheet" />
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+  </head>
+
+  <body class="font-display">
+    <!-- headernavigasi  -->
+    <div class="bg-white" x-data="{ isOpen: false }">
+      <header class="absolute inset-x-0 top-0 z-50">
+        <nav class="flex items-center justify-between p-6 lg:px-8 shadow-lg bg-white" aria-label="Global">
+          <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button type="button" @click="isOpen = true" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Open main menu</span>
+              <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a href="#" class="text-sm/6 font-semibold text-gray-900">Beranda</a>
+            <a href="#" class="text-sm/6 font-semibold text-gray-900">Tentang Kami</a>
+            <a href="#" class="text-sm/6 font-semibold text-gray-900">Lapangan</a>
+            <a href="#" class="text-sm/6 font-semibold text-gray-900">Kontak</a>
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">→</span></a>
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="true" x-show="isOpen" @click.away="isOpen = false">
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+          <div class="fixed inset-0 z-50"></div>
+          <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+              </a>
+              <button type="button" @click="isOpen = false" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                <span class="sr-only">Close menu</span>
+                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
+                </div>
+                <div class="py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- form isi awal-->
+
+      
+
+<!-- form isi akhir -->
+
+
+
+
+
+
+
+
+   
+<div class="min-h-screen bg-white flex justify-center items-start pt-[167px] px-6">
+
+  <div class="flex flex-col lg:flex-row gap-10 w-full max-w-7xl">
+
+    <!-- Sidebar Kiri -->
+    <aside class="w-full lg:w-1/5">
+      <h2 class="text-3xl font-bold mb-6">Profil</h2>
+      <ul class="space-y-2">
+        <li>
+          <a href="#" class="block font-semibold text-black">Data Diri</a>
+        </li>
+        <li>
+          <a href="#" class="block text-gray-500 hover:text-black transition">Ubah Kata Sandi</a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Konten Tengah -->
+    <section class="w-full lg:w-3/5">
+      <div class="bg-white shadow-lg rounded-xl p-6 space-y-4">
+        <div class="grid grid-cols-2 gap-y-2 text-sm">
+          <div class="font-semibold">Nama</div>
+          <div>ujicobakominfo25</div>
+
+          <div class="font-semibold">Email</div>
+          <div>
+            <a href="mailto:ujicobakominfo25@gmail.com" class="text-blue-600 underline">ujicobakominfo25@gmail.com</a>
+          </div>
+
+          <div class="font-semibold">Alamat</div>
+          <div>Di jalan abc</div>
+
+          <div class="font-semibold">Telepon</div>
+          <div>085123456789</div>
+
+          <div class="font-semibold">NIK</div>
+          <div>35012345678909</div>
+        </div>
+        <div class="pt-4">
+          <button class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded-md">
+            Ubah Data Diri
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sidebar Kanan (Foto Profil) -->
+    <aside class="w-full lg:w-1/5 flex flex-col items-center space-y-4">
+      <img src="https://via.placeholder.com/150" alt="Foto Profil" class="rounded-md w-full object-cover shadow-md" />
+      <label class="w-full">
+        <input type="file" class="hidden" accept=".jpg,.jpeg,.png" />
+        <span
+          class="inline-block w-full bg-green-600 text-white text-center py-2 rounded-md cursor-pointer hover:bg-green-700 transition">
+          Pilih Foto
+        </span>
+      </label>
+      <p class="text-xs text-gray-500 text-center">
+        Besar file: maksimum 10 mb.<br />
+        Ekstensi file yang diperbolehkan: <br />
+        <strong>.JPG .JPEG .PNG</strong>
+      </p>
+    </aside>
+
+  </div>
+</div>
+
+
+    
+
+    <!-- footer awal-->
+    <div class="w-full overflow-hidden">
+      <svg class="w-full h-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#222222"
+          fill-opacity="1"
+          d="M0,160L48,144C96,128,192,96,288,112C384,128,480,192,576,202.7C672,213,768,171,864,128C960,85,1056,43,1152,42.7C1248,43,1344,85,1392,106.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+<footer class="bg-[#222222] text-white">
+    <div class="max-w-6xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- Kontak Kami -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Kontak Kami</h3>
+        <ul class="space-y-3 text-sm text-white/80">
+          <li class="flex items-start gap-3">
+            <img src="https://via.placeholder.com/20" alt="Location" class="w-5 h-5 mt-1" />
+            <span>Jl. Tenes No.1 (Stadion Gajayana) Kota Malang</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="https://via.placeholder.com/20" alt="Phone" class="w-5 h-5" />
+            <span>+ (0341) 324375</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <img src="https://via.placeholder.com/20" alt="Email" class="w-5 h-5" />
+            <a href="mailto:disporaparmalang@gmail.com" class="hover:underline">disporaparmalang@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Media Sosial -->
+      <div class="md:text-right">
+        <h3 class="text-lg font-semibold mb-4">Media Sosial</h3>
+        <ul class="space-y-3 text-sm text-white/80">
+          <li class="flex md:justify-end items-center gap-3">
+            <img src="https://via.placeholder.com/20" alt="Instagram" class="w-5 h-5" />
+            <span>@Disporarkotamalang</span>
+          </li>
+          <li class="flex md:justify-end items-center gap-3">
+            <img src="https://via.placeholder.com/20" alt="YouTube" class="w-5 h-5" />
+            <span>Disporarkotamalang</span>
+          </li>
+          <li class="flex md:justify-end items-center gap-3">
+            <img src="https://via.placeholder.com/20" alt="Facebook" class="w-5 h-5" />
+            <span>Disporarkotamalang</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="bg-black py-4 text-sm text-white/70 flex flex-col md:flex-row justify-between items-center px-4 md:px-12">
+      <div class="mb-2 md:mb-0">
+        Copyright © 2025 All rights reserved |
+        <span class="font-semibold text-white">DISPORAPAR KOTA MALANG</span>
+      </div>
+      <div class="space-x-6">
+        <a href="#" class="hover:underline">Kebijakan Privasi</a>
+        <a href="#" class="hover:underline">Peta Situs</a>
+      </div>
+    </div>
+
+    <!-- footer akhir -->
+  </body>
+</html>
