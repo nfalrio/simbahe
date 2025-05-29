@@ -6,11 +6,21 @@
   "name": "simbahe",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://nfalrio.github.io/simbahe",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/style.css --watch"
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./build/style.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./build/style.css --minify",
+    "copy-html": "cpx src/index.html build/",
+    "copy-images": "xcopy image build\\image /E /I /Y",
+    "predeploy": "npm run build && npm run copy-html && npm run copy-images",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "cpy-cli": "^5.0.0",
+    "gh-pages": "^6.3.0"
+  }
 }
